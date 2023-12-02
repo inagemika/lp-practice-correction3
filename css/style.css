@@ -76,7 +76,14 @@ main {
 
 .work_contents > div {
   text-align: center;
-  flex: 4 6;
+}
+
+.img-inner {
+  width: 40%;
+}
+
+.text_home-inner {
+  width: 60%;
 }
 
 .work img {
@@ -114,21 +121,32 @@ main {
 .skills_contents {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -50px;
 }
 
-.skills_img img {
+.skills_contents li  {
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.skills_contents li img {
   width: 300px;
   height: 300px;
-  padding:50px;
   opacity: 0.7;
+  transition: .7s;
 }
 
-.skills_img img:hover {
-  opacity: 1.0;
+.skills_contents li:nth-child(3) {
+  margin-right: 0px;
 }
 
-.skills_img img:nth-child(n+4) {
-  padding-bottom: 0px;
+.skills_contents li:nth-child(6) {
+  margin-right: 0px;
+}
+
+.skills_contents li img:hover {
+  opacity:1.0;
 }
 
 .plan{
@@ -197,12 +215,20 @@ main {
   margin: 0 auto;
 }
 
-.sns:hover {
+.sns_icon a {
+  color: #8c8c8c; 
+  overflow: hidden; 
+  font-size: 40px; 
+  width: 185px;
+  text-decoration:none;
+}
+
+.sns_icon:hover {
   background: #fff;
   transition: 0.5s;
 }
 
-.sns_list > li {
+.sns_list > .sns_icon {
   padding: 25px 0px 25px 0px;
 }
 
