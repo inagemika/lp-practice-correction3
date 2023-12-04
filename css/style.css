@@ -90,7 +90,7 @@ main {
   width: 250px;
 }
 
-.text_home .ttl {
+.text_home .text_work {
   font-size: 40px;
   letter-spacing: 10px;
   padding-top: 20px;
@@ -108,21 +108,17 @@ main {
   padding-bottom: 70px;
 }
 
-.head_home {
-  display: flex;
-  justify-content: center;
-}
-
-.head_home .ttl {
+.text_skills {
+  text-align: center;
   font-size: 40px;
   letter-spacing: 10px;
 }
 
 .skills_contents {
   display: flex;
-  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
-  margin-top: -50px;
+  padding-top: 50px;
 }
 
 .skills_contents li  {
@@ -137,11 +133,11 @@ main {
   transition: .7s;
 }
 
-.skills_contents li:nth-child(3) {
-  margin-right: 0px;
+.skills_contents li:nth-child(-n+3) {
+  margin-top: 0px;
 }
 
-.skills_contents li:nth-child(6) {
+.skills_contents li:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -156,13 +152,8 @@ main {
   padding: 50px 0px 50px 0px;
 }
 
-.plan_contents {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.plan_contents .ttl {
+.text_plan {
+  text-align: center;
   font-size: 40px;
   letter-spacing: 10px;
 }
@@ -223,9 +214,12 @@ main {
   text-decoration:none;
 }
 
+.sns_icon {
+  transition: 0.5s;
+}
+
 .sns_icon:hover {
   background: #fff;
-  transition: 0.5s;
 }
 
 .sns_list > .sns_icon {
