@@ -284,6 +284,7 @@ main {
   .skills_contents li  {
     margin-right: 0px;
     margin-top: 0px;
+    font-size: 0;
   }
 
   .skills_contents li:nth-child(3n+4) {
